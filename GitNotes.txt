@@ -1,0 +1,46 @@
+git init
+The word init means initialize. The command sets up all the tools Git needs to begin tracking changes made to the project.
+
+git status
+untracked files. Untracked means that Git sees the file but has not started tracking changes yet.
+
+git add filename
+git add filename_1 filename_2
+
+git diff filename
+
+git commit is the command we’ll do next. However, one more bit of code is needed for a commit: 
+the option -m followed by a message. Here’s an example:
+git commit -m "Complete first line of dialogue"
+
+git log
+
+git init creates a new Git repository
+git status inspects the contents of the working directory and staging area
+git add adds files from the working directory to the staging area
+git diff shows the difference between the working directory and the staging area
+git commit permanently stores file changes from the staging area in the repository
+git log shows a list of all previous commits
+
+
+To see the HEAD commit, enter:
+git show HEAD
+
+git checkout HEAD changes.txt
+
+
+unstage that file from the staging area using
+git reset HEAD filename
+
+git reset commit_SHA
+
+git checkout HEAD filename: Discards changes in the working directory.
+git reset HEAD filename: Unstages file changes in the staging area.
+git reset commit_SHA: Resets to a previous commit in your commit history.
+
+show branches
+git branch
+
+git branch new_branch
+
+git checkout branch_name
